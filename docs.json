@@ -641,6 +641,12 @@
                 "version": "简体中文",
                 "tabs": [
                     {
+                        "tab": "Geene AI",
+                        "pages": [
+                            "zh-hans/resources/db-dify"
+                        ]
+                    },
+                    {
                         "tab": "使用文档",
                         "groups": [
                             {
@@ -1290,7 +1296,6 @@
                     {
                         "tab": "资源",
                         "pages": [
-                            "zh-hans/resources/db-dify",
                             "zh-hans/resources/termbase",
                             "zh-hans/resources/about-dify/dify-brand-guidelines",
                             "zh-hans/resources/about-dify/dify-brand-usage-terms"
