@@ -1290,6 +1290,7 @@
                     {
                         "tab": "资源",
                         "pages": [
+                            "zh-hans/resources/db-dify",
                             "zh-hans/resources/termbase",
                             "zh-hans/resources/about-dify/dify-brand-guidelines",
                             "zh-hans/resources/about-dify/dify-brand-usage-terms"
