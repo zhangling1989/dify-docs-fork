@@ -1,18 +1,18 @@
 ---
-title: Dify Premium
+title: Geene AI Premium
 ---
 
-Dify Premium 是一款 AWS AMI 产品，允许自定义品牌，并可作为 EC2 一键部署到你的 AWS VPC 上。前往 [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-t22mebxzwjhu6) 进行订阅并使用，它适合以下场景：
+Geene AI Premium 是一款 AWS AMI 产品，允许自定义品牌，并可作为 EC2 一键部署到你的 AWS VPC 上。前往 [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-t22mebxzwjhu6) 进行订阅并使用，它适合以下场景：
 
 * 在中小型企业内，需在服务器上创建一个或多应用程序，并且关心数据私有化。
-* 你对 [Dify Cloud](/zh-hans/getting-started/cloud)订阅计划感兴趣，但所需的用例资源超出了[计划](https://dify.ai/pricing)内所提供的资源。
-* 你希望在组织内采用 Dify Enterprise 之前进行 POC 验证。
+* 你对 [Geene AI Cloud](/zh-hans/getting-started/cloud)订阅计划感兴趣，但所需的用例资源超出了[计划](https://dify.ai/pricing)内所提供的资源。
+* 你希望在组织内采用 Geene AI Enterprise 之前进行 POC 验证。
 
 ## 设置
 
-如果这是你第一次访问 Dify，请输入管理员初始化密码（设置为你的 EC2 实例 ID）以开始设置过程。
+如果这是你第一次访问 Geene AI，请输入管理员初始化密码（设置为你的 EC2 实例 ID）以开始设置过程。
 
-部署 AMI 后，通过 EC2 控制台中找到的实例公有 IP 访问 Dify（默认使用 HTTP 端口 80）。
+部署 AMI 后，通过 EC2 控制台中找到的实例公有 IP 访问 Geene AI（默认使用 HTTP 端口 80）。
 
 ## 升级
 
@@ -39,7 +39,7 @@ docker-compose -f docker-compose.yaml -f docker-compose.override.yaml up -d
 
 ### 1. 备份数据
 
-1.1 运行 `cd` 命令至你的 Dify 项目路径，新建备份分支。
+1.1 运行 `cd` 命令至你的 Geene AI 项目路径，新建备份分支。
 
 1.2 运行以下命令，备份你的 docker-compose YAML 文件（可选）。
 
@@ -57,7 +57,7 @@ tar -cvf volumes-$(date +%s).tgz volumes
 
 ### 2. 升级版本
 
-`v1.0.0` 支持通过 Docker Compose 部署。运行 `cd` 命令至你的 Dify 项目路径，运行以下命令升级 Dify 版本：
+`v1.0.0` 支持通过 Docker Compose 部署。运行 `cd` 命令至你的 Geene AI 项目路径，运行以下命令升级 Geene AI 版本：
 
 ```bash
 git checkout 1.0.0 # 切换至 1.0.0 分支
@@ -88,7 +88,7 @@ poetry run flask extract-plugins --workers=20
 
 > 如果提示报错，建议参考前置准备，先在服务器内安装 `poetry` 环境；运行命令后，若终端出现待输入项，点击 **“回车”** 跳过输入。
 
-此命令将提取当前环境中使用的所有模型和工具。workers 参数将决定提取过程中的所使用的并行进程数，可根据需要进行调整。命令运行完成后将生成 `plugins.jsonl` 文件保存结果，该文件包含了当前 Dify 实例中所有工作区的插件信息。
+此命令将提取当前环境中使用的所有模型和工具。workers 参数将决定提取过程中的所使用的并行进程数，可根据需要进行调整。命令运行完成后将生成 `plugins.jsonl` 文件保存结果，该文件包含了当前 Geene AI 实例中所有工作区的插件信息。
 
 确保你的网络正常访问公网，并支持访问：`https://marketplace.dify.ai`。在 `docker-api-1` 容器内继续运行以下命令：
 
@@ -102,7 +102,7 @@ poetry run flask install-plugins --workers=2
 
 ## 定制化
 
-就像自托管部署一样，你可以根据需要修改 EC2 实例中 `.env` 下的环境变量。然后使用以下命令重新启动 Dify：
+就像自托管部署一样，你可以根据需要修改 EC2 实例中 `.env` 下的环境变量。然后使用以下命令重新启动 Geene AI：
 
 ```bash
 docker-compose down
@@ -111,7 +111,7 @@ docker-compose -f docker-compose.yaml -f docker-compose.override.yaml up -d
 
 ## 自定义 WebApp & 品牌
 
-你可以在设置里的 **定制** 中启用此功能，启用 **移除 Powered by Dify** 并上传您自己的标志。
+你可以在设置里的 **定制** 中启用此功能，启用 **移除 Powered by Geene AI** 并上传您自己的标志。
 
 {/*
 Contributing Section

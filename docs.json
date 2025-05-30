@@ -1,16 +1,16 @@
 {
     "$schema": "https://mintlify.com/docs.json",
     "theme": "mint",
-    "name": "Dify Docs",
+    "name": "Geene AI Docs",
     "colors": {
         "primary": "#0060FF",
         "light": "#688FE8",
         "dark": "#0034FF"
     },
-    "favicon": "/logo/dify-logo.png",
+    "favicon": "/logo/logo_geene@2x-bea8b0f5.webp",
     "logo": {
-        "light": "https://assets-docs.dify.ai/2025/05/d05cfc6ebe48f725d171dc71c64a5d16.svg",
-        "dark": "https://assets-docs.dify.ai/2025/05/c51f1cda47c1d9a4a162d7736f6e4c53.svg"
+        "light": "http://45.78.212.51/assets/logo_geene@2x-bea8b0f5.webp",
+        "dark": "http://45.78.212.51/assets/logo_geene@2x-bea8b0f5.webp"
     },
     "navigation": {
         "versions": [
@@ -24,7 +24,7 @@
                                 "group": "Getting Started",
                                 "pages": [
                                     {
-                                        "group": "Welcome to Dify",
+                                        "group": "Welcome to Geene AI",
                                         "pages": [
                                             "en/introduction",
                                             "en/getting-started/readme/features-and-specifications",
@@ -32,7 +32,7 @@
                                         ]
                                     },
                                     {
-                                        "group": "Dify Community",
+                                        "group": "Geene AI Community",
                                         "pages": [
                                             "en/getting-started/install-self-hosted/readme",
                                             "en/getting-started/install-self-hosted/docker-compose",
@@ -337,7 +337,7 @@
                                             "en/plugins/schema-definition/general-specifications",
                                             "en/plugins/schema-definition/persistent-storage",
                                             {
-                                                "group": "Reverse Invocation of the Dify Service",
+                                                "group": "Reverse Invocation of the Geene AI Service",
                                                 "pages": [
                                                     "en/plugins/schema-definition/reverse-invocation-of-the-dify-service/README",
                                                     "en/plugins/schema-definition/reverse-invocation-of-the-dify-service/app",
@@ -363,7 +363,7 @@
                                             "en/plugins/publish-plugins/README",
                                             "en/plugins/publish-plugins/plugin-auto-publish-pr",
                                             {
-                                                "group": "Publish to Dify Marketplace",
+                                                "group": "Publish to Geene AI Marketplace",
                                                 "pages": [
                                                     "en/plugins/publish-plugins/publish-to-dify-marketplace/README",
                                                     "en/plugins/publish-plugins/publish-to-dify-marketplace/plugin-developer-guidelines",
@@ -500,7 +500,7 @@
                                         ]
                                     },
                                     {
-                                        "group": "Developing Dify Plugins",
+                                        "group": "Developing Geene AI Plugins",
                                         "pages": [
                                             "plugin-dev-en/0221-initialize-development-tools",
                                             "plugin-dev-en/0222-creating-new-model-provider-extra",
@@ -647,7 +647,7 @@
                                 "group": "入门",
                                 "pages": [
                                     {
-                                        "group": "欢迎使用 Dify",
+                                        "group": "欢迎使用 Geene AI",
                                         "pages": [
                                             "zh-hans/introduction",
                                             "zh-hans/getting-started/readme/features-and-specifications",
@@ -656,7 +656,7 @@
                                     },
                                     "zh-hans/getting-started/cloud",
                                     {
-                                        "group": "Dify 社区版",
+                                        "group": "Geene AI 社区版",
                                         "pages": [
                                             "zh-hans/getting-started/install-self-hosted/readme",
                                             "zh-hans/getting-started/install-self-hosted/docker-compose",
@@ -989,7 +989,7 @@
                                             "zh-hans/plugins/schema-definition/general-specifications",
                                             "zh-hans/plugins/schema-definition/persistent-storage",
                                             {
-                                                "group": "反向调用 Dify 服务",
+                                                "group": "反向调用 Geene AI 服务",
                                                 "pages": [
                                                     "zh-hans/plugins/schema-definition/reverse-invocation-of-the-dify-service/README",
                                                     "zh-hans/plugins/schema-definition/reverse-invocation-of-the-dify-service/app",
@@ -1014,7 +1014,7 @@
                                             "zh-hans/plugins/publish-plugins/README",
                                             "zh-hans/plugins/publish-plugins/plugin-auto-publish-pr",
                                             {
-                                                "group": "发布至 Dify Marketplace",
+                                                "group": "发布至 Geene AI Marketplace",
                                                 "pages": [
                                                     "zh-hans/plugins/publish-plugins/publish-to-dify-marketplace/README",
                                                     "zh-hans/plugins/publish-plugins/publish-to-dify-marketplace/plugin-developer-guidelines",
@@ -1033,7 +1033,7 @@
                                 "group": "研发",
                                 "pages": [
                                     {
-                                        "group": "DifySandbox",
+                                        "group": "Geene AISandbox",
                                         "pages": [
                                             "zh-hans/development/backend/sandbox/README",
                                             "zh-hans/development/backend/sandbox/contribution"
@@ -1160,7 +1160,7 @@
                                         ]
                                     },
                                     {
-                                        "group": "开发 Dify 插件",
+                                        "group": "开发 Geene AI 插件",
                                         "pages": [
                                             "plugin-dev-zh/0221-initialize-development-tools",
                                             "plugin-dev-zh/0222-creating-new-model-provider-extra",
@@ -1307,7 +1307,7 @@
                                 "group": "入門",
                                 "pages": [
                                     {
-                                        "group": "Difyへようこそ",
+                                        "group": "Geene AIへようこそ",
                                         "pages": [
                                             "ja-jp/introduction",
                                             "ja-jp/getting-started/readme/features-and-specifications",
@@ -1316,7 +1316,7 @@
                                     },
                                     "ja-jp/getting-started/cloud",
                                     {
-                                        "group": "Dify コミュニティ版",
+                                        "group": "Geene AI コミュニティ版",
                                         "pages": [
                                             "ja-jp/getting-started/install-self-hosted/README",
                                             "ja-jp/getting-started/install-self-hosted/docker-compose",
@@ -1619,7 +1619,7 @@
                                             "ja-jp/plugins/schema-definition/general-specifications",
                                             "ja-jp/plugins/schema-definition/persistent-storage",
                                             {
-                                                "group": "Difyサービスの逆呼び出し",
+                                                "group": "Geene AIサービスの逆呼び出し",
                                                 "pages": [
                                                     "ja-jp/plugins/schema-definition/reverse-invocation-of-the-dify-service/README",
                                                     "ja-jp/plugins/schema-definition/reverse-invocation-of-the-dify-service/app",
@@ -1645,7 +1645,7 @@
                                             "ja-jp/plugins/publish-plugins/README",
                                             "ja-jp/plugins/publish-plugins/plugin-auto-publish-pr",
                                             {
-                                                "group": "Difyマーケットプレイスへの公開",
+                                                "group": "Geene AIマーケットプレイスへの公開",
                                                 "pages": [
                                                     "ja-jp/plugins/publish-plugins/publish-to-dify-marketplace/README",
                                                     "ja-jp/plugins/publish-plugins/publish-to-dify-marketplace/plugin-developer-guidelines",
@@ -1783,7 +1783,7 @@
                                         ]
                                     },
                                     {
-                                        "group": "Difyプラグインの開発",
+                                        "group": "Geene AIプラグインの開発",
                                         "pages": [
                                             "plugin-dev-ja/0221-initialize-development-tools",
                                             "plugin-dev-ja/0222-creating-new-model-provider-extra",
@@ -3054,7 +3054,7 @@
         ],
         "primary": {
             "type": "button",
-            "label": "Dify",
+            "label": "Geene AI",
             "href": "https://cloud.dify.ai"
         }
     },
