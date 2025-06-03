@@ -1,0 +1,80 @@
+# 大模型部署
+
+## nginx配置
+
+```shell
+location /wan2.1/ {
+    if ($http_Authorization != "Bearer wan-4uGcFe09WpJPwZH785QQuErI") {
+        return 403 Forbidden;
+    }
+    proxy_pass http://10.0.1.9:11434/;
+}
+
+location /qwen2.5/ {
+    if ($http_Authorization != "Bearer qwen2.5-4uGcFe09WpJPwZH785QQuErI") { ## moedl: qwen2.5:72b
+        return 403 Forbidden;
+    }
+    proxy_pass http://10.0.1.12:11434/;
+}
+location /qwen3/ {
+    if ($http_Authorization != "Bearer qwen3-4uGcFe09WpJPwZH785QQuErI") { ## moedl: qwen3:32b
+        return 403 Forbidden;
+    }
+    proxy_pass http://10.0.1.12:11434/;
+}
+
+location /qwq/ {
+    if ($http_Authorization != "Bearer qwq-4uGcFe09WpJPwZH785QQuErI") {  ## moedl: qwq:32b
+        return 403 Forbidden;
+    }
+    proxy_pass http://10.0.1.13:11434/;
+}
+
+location /qwen2.5-vl/ {
+    if ($http_Authorization != "Bearer qwen2.5-vl-4uGcFe09WpJPwZH785QQuErI") {  ## moedl: qwen2.5-vl:72b
+        return 403 Forbidden;
+    }
+    proxy_pass http://10.0.1.8:18000/;
+}
+
+location /deepseek-r1-1776/ {
+    if ($http_Authorization != "Bearer deepseek-r1-1776-4uGcFe09WpJPwZH785QQuErI") {  ## moedl: /data/models/DeepSeek-R1
+        return 403 Forbidden;
+    }
+    proxy_pass http://10.0.1.11:8080/;
+}
+location /deepseek-v3/ {
+    # Define valid API keys
+    if ($http_authorization ~* ^Bearer\s+(dabcbc132d1f466b55f337294ca4ddd7)$) {  ## moedl: DeepSeek-V3
+        set $valid_api_key 1;
+    }
+    if ($http_authorization ~* ^Bearer\s+(deepseek-v3-1776-4uGcFe09WpJPwZH785QQuErI)$) {
+        set $valid_api_key 1;
+    }
+    if ($valid_api_key = 0) {
+        return 403 "Forbidden: Missing or invalid API key";
+    }
+    proxy_pass http://10.0.1.4:8080/;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+location /deepseek-r1-old/ {
+    # Define valid API keys
+    if ($http_authorization ~* ^Bearer\s+(724520F08B4F9F24)$) { ## moedl: r1:1776
+        set $valid_api_key 1;
+    }
+    if ($http_authorization ~* ^Bearer\s+(deepseek-r1-1776-4uGcFe09WpJPwZH785QQuErI)$) {
+        set $valid_api_key 1;
+    }
+    if ($valid_api_key = 0) {
+        return 403 "Forbidden: Missing or invalid API key";
+    }
+    proxy_pass http://10.0.1.4:8080/;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+```

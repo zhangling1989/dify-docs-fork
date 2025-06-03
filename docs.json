@@ -643,7 +643,8 @@
                     {
                         "tab": "Geene AI",
                         "pages": [
-                            "zh-hans/resources/db-dify"
+                            "zh-hans/GeeneAI/db-dify",
+                            "zh-hans/GeeneAI/llm_development"
                         ]
                     },
                     {
